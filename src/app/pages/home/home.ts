@@ -13,9 +13,9 @@ import { FormsModule } from '@angular/forms'; // ✅ Add this
 export class Home {
 
   habits: {name: string, isCompleted: boolean}[] = [
-    {name: "Drink Water 💧", isCompleted: false},
-    {name: "Workout 🏋️‍♂️", isCompleted: false},
-    {name: "Read 10 Pages 📚", isCompleted: false}
+    {name: "Charles 👽", isCompleted: false},
+    {name: "Vector Anomolies 🛸", isCompleted: false},
+    {name: "Phobos at 12 A.D. 🧠", isCompleted: false}
   ];
 
   constructor(private confettiService: Confetti) {}
