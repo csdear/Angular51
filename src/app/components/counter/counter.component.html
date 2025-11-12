@@ -1,0 +1,17 @@
+<div class="card w-full max-w-md bg-base-100 shadow-sm p-4">
+  <h3 class="text-lg font-semibold mb-2">Counter — Signals</h3>
+  <div class="flex items-center space-x-4 mb-3">
+    <button class="btn btn-primary" (click)="incrementSignal()">Increment</button>
+    <div class="text-2xl font-mono">{{ count() }}</div>
+    <button class="btn btn-secondary" (click)="decrementSignal()">Decrement</button>
+  </div>
+
+  <h3 class="text-lg font-semibold mb-2">Counter — RxJS (BehaviorSubject)</h3>
+  <div class="flex items-center space-x-4">
+    <button class="btn btn-primary" (click)="incrementRx()">Increment</button>
+    <div class="text-2xl font-mono">{{ rxCount$ | async }}</div>
+    <button class="btn btn-secondary" (click)="decrementRx()">Decrement</button>
+  </div>
+
+  <p class="mt-3 text-sm opacity-75">Signals update directly; RxJS updates via an observable and the async pipe.</p>
+</div>
