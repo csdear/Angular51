@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Confetti } from '../../services/confetti';
+import { CounterComponent } from '../../components/counter/counter.component';
 
 import { NgForOf } from '@angular/common'; // ✅ add this
 import { FormsModule } from '@angular/forms'; // ✅ Add this
 
 @Component({
   selector: 'app-home',
-  imports: [NgForOf, FormsModule],
+  imports: [NgForOf, FormsModule, CounterComponent],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
